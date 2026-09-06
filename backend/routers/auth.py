@@ -5,7 +5,7 @@ from database import get_db
 from schemas import TokenResponse, UserLogin, UserRegister
 from services import auth_service
 
-router = APIRouter(prefix="/api/auth", tags=["auth"])
+router = APIRouter(prefix="/api/auth", tags=["认证"])
 
 
 @router.post("/register", response_model=TokenResponse)
